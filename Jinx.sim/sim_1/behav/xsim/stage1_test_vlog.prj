@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../Jinx.srcs/sources_1" --include "../../../../Jinx.srcs/sources_1/rom" \
+"../../../../Jinx.srcs/sources_1/Jinx.sv" \
+"../../../../Jinx.srcs/sources_1/new/exe.sv" \
+"../../../../Jinx.srcs/sources_1/new/exe_mem.sv" \
+"../../../../Jinx.srcs/sources_1/new/id.sv" \
+"../../../../Jinx.srcs/sources_1/new/id_exe.sv" \
+"../../../../Jinx.srcs/sources_1/new/if_id.sv" \
+"../../../../Jinx.srcs/sources_1/rom/inst_rom.sv" \
+"../../../../Jinx.srcs/sources_1/new/jinxLS.sv" \
+"../../../../Jinx.srcs/sources_1/new/mem.sv" \
+"../../../../Jinx.srcs/sources_1/new/mem_wb.sv" \
+"../../../../Jinx.srcs/sources_1/new/pc.sv" \
+"../../../../Jinx.srcs/sources_1/new/regfile.sv" \
+"../../../../Jinx.srcs/sim_1/new/stage1_test.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
